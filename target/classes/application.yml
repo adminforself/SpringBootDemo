@@ -1,0 +1,14 @@
+server:
+  port: 80
+# 数据库相关配置
+Spring:
+  # 数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot?characaterEncoding=UTF8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*Dao.xml # 映射配置扫描
+  type-aliases-package: com.springBoot.demo.pojo  # 扫描实体包，改为别名
+

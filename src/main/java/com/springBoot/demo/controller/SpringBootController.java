@@ -10,4 +10,9 @@ public class SpringBootController {
     public String HelloWord(){
         return "Hello World";
     }
+
+    @RequestMapping("/demo1")
+    public String HelloWord1(){
+        return "tomcat:80端口访问HelloWord";
+    }
 }
